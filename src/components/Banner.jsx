@@ -55,6 +55,9 @@ function Banner() {
               of building Web applications with Java / Reactjs and some other
               cool libraries and frameworks.
             </p>
+            <a href="https://drive.google.com/file/d/13ECB5STg9l_QcEnPbbGQOnp52dUyPGtS/view?usp=sharing">
+              <button className="resume-button">Check My Resume</button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />

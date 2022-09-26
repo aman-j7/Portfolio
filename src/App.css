@@ -251,6 +251,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 
+button.resume-button {
+  position: relative;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-in-out 0.3s;
+}
+button.resume-button:hover{
+  box-shadow: inset 200px 0 0 0 black;
+  color: white;
+}
+
 .banner img {
   animation: updown 3s linear infinite;
 }
