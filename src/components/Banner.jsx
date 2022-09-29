@@ -5,7 +5,7 @@ import headerImg from "../assets/img/header-img.svg";
 function Banner() {
   const [loopNumber, setLoopNumber] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Software Developer"];
+  const toRotate = ["Software Developer"];
   const [text, setText] = useState(" ");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -47,16 +47,16 @@ function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome To My Portfolio</span>
             <h1>
-              {`Hi, I'm Aman`} <br />
+              {`Hi, I'm Aman Kumar`} <br />
               <span className="wrap">{text}</span>
             </h1>
             <p>
               A passionate Full Stack Software Developer 🚀 having an experience
-              of building Web applications with Java / Reactjs and some other
-              cool libraries and frameworks.
+              of building applications using Java, ReactJs, and other great
+              libraries and frameworks.
             </p>
             <a href="https://drive.google.com/file/d/13ECB5STg9l_QcEnPbbGQOnp52dUyPGtS/view?usp=sharing">
-              <button className="resume-button">Check My Resume</button>
+              <button className="resume-button">My Resume</button>
             </a>
           </Col>
           <Col xs={12} md={6} xl={5}>

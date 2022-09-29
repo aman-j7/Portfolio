@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faGoogle
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
-import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 function Contact() {
   return (
@@ -18,10 +18,15 @@ function Contact() {
         <Col md={6}>
           <h2> Reach Out to me! </h2>
           <p>
-            DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.
+            WANT TO DISCUSS A PROJECT OR JUST SAY HELLO ? MY INBOX IS OPEN FOR
+            ALL.
           </p>
-          <p style={{color: "yellow", fontWeight: "bold" }}>"Pressure is privilege ! Make sure to go ULTRA PLUS++"</p>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> India </p>
+          <p style={{ color: "yellow", fontWeight: "bold" }}>
+            "Pressure is privilege ! Make sure to go ULTRA PLUS++"
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> India{" "}
+          </p>
           <p>Open for opportunities: Yes</p>
           <div className="social-icon">
             <a href="https://in.linkedin.com/in/aman-kumar-b56a48201">
@@ -48,7 +53,20 @@ function Contact() {
           </div>
         </Col>
       </Row>
-      <Row> <p  className="mt-2 m-auto" style={{ fontSize: "1rem",fontWeight : "bold", width : "100%", textAlign:"center" }}>Made with ❤️ by Aman </p></Row>
+      <Row>
+        {" "}
+        <p
+          className="mt-2 m-auto"
+          style={{
+            fontSize: "1rem",
+            fontWeight: "bold",
+            width: "100%",
+            textAlign: "center",
+          }}
+        >
+          Made with ❤️ by Aman 
+        </p>
+      </Row>
     </section>
   );
 }

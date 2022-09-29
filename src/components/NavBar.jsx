@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faGoogle
+  faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
 
 function NavBar() {
@@ -73,7 +73,7 @@ function NavBar() {
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="fa-xl "
-                  style={{ color: "blue"}}
+                  style={{ color: "blue" }}
                 />
               </a>
               <a href="https://github.com/aman-j7">

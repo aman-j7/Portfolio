@@ -25,81 +25,66 @@ function Skills() {
     },
   };
 
-  const skills1 = [
+  const skills = [
     {
       percentage: 90,
       name: "C/C++",
+      color: "#4A2FBD",
     },
     {
       percentage: 85,
       name: "Java",
+      color: "#a53277",
     },
     {
       percentage: 80,
       name: "Javascript",
+      color: "#4A2FBD",
     },
-  ];
-  const skills2 = [
     {
       percentage: 80,
       name: "MySql",
+      color: "#a53277",
     },
     {
       percentage: 75,
       name: "Spring Boot",
+      color: "#4A2FBD",
     },
     {
       percentage: 75,
       name: "React Js",
+      color: "#a53277",
     },
   ];
- 
+
   return (
-    <section className="skill" id="skills">
+    <section className="skill mt-5" id="skills">
       <Container>
         <Row>
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              {/* <p>
-               Tech-Stacks I am Proficient At 
-              </p> */}
+              <p className="mt-6">
+                These are technologies that I have experience in. Always looking
+                to learn new technologies to broaden my horizons and find the
+                ones that best suit the client's needs as a developer.
+              </p>
               <Carousel
                 className="skill-slider mt-5"
                 responsive={responsive}
                 infinite
-                // autoplay
+                autoPlay={true}
                 arrows={false}
                 transitionDuration={100}
               >
-                {skills1.map((skill, index) => {
+                {skills.map((skill, index) => {
                   return (
                     <div className="item" key={index}>
                       <ProgressBar
                         className="progress-bar"
                         value={skill.percentage}
-                        color="#a53277"
-                      />
-                      <h5>{skill.name}</h5>
-                    </div>
-                  );
-                })}
-              </Carousel>
-              <Carousel
-                className="skill-slider mt-5"
-                responsive={responsive}
-                infinite
-                // autoPlay
-                arrows={false}
-                transitionDuration={100}
-              >
-                {skills2.map((skill, index) => {
-                  return (
-                    <div className="item" key={index}>
-                      <ProgressBar
-                        className="progress-bar"
-                        value={skill.percentage}
-                        color="#4A2FBD"
+                        color={skill.color}
                       />
                       <h5>{skill.name}</h5>
                     </div>

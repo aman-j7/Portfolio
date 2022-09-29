@@ -4,14 +4,16 @@ import "react-circular-progressbar/dist/styles.css";
 
 function ProgressBar({ value, color }) {
   const [percentage, setPercentage] = useState(0);
+
   useEffect(() => {
-    if (percentage <= value) {
-      setInterval(
-        () => setPercentage((prev) => (prev === value ? value : prev + 1)),
-        100
-      );
-    }
-  }, [percentage, value]);
+    const timer = setInterval(() => {
+      setPercentage((prev) => (prev >= value ? 0 : value));
+    }, 1500);
+    return () => {
+      clearInterval(timer);
+    };
+  }, [value]);
+
   return (
     <CircularProgressbar
       className="progress-bar"

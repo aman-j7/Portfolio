@@ -34,7 +34,8 @@ function Projects() {
           <Col className="align-center">
             <h2>Projects</h2>
             <p>
-             These are the projects that I have worked on. I am always looking to collaborate and further improve them.
+              These are the projects that I have worked on. I am always looking
+              to collaborate and further improve them.
             </p>
             <Row>
               {projects.map((project, index) => {
